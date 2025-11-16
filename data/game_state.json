@@ -1,0 +1,140 @@
+{
+  "scores": {
+    "proactive@xmpp": 5,
+    "sequential@xmpp": 7,
+    "reactive@xmpp": 5
+  },
+  "history": [
+    {
+      "round": 1,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "sequential@xmpp": "rock",
+        "proactive@xmpp": "rock"
+      },
+      "scores": {
+        "proactive@xmpp": 0,
+        "sequential@xmpp": 0,
+        "reactive@xmpp": 0
+      }
+    },
+    {
+      "round": 2,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "sequential@xmpp": "paper",
+        "proactive@xmpp": "rock"
+      },
+      "scores": {
+        "proactive@xmpp": 0,
+        "sequential@xmpp": 2,
+        "reactive@xmpp": 0
+      }
+    },
+    {
+      "round": 3,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "sequential@xmpp": "scissors",
+        "proactive@xmpp": "scissors"
+      },
+      "scores": {
+        "proactive@xmpp": 0,
+        "sequential@xmpp": 2,
+        "reactive@xmpp": 2
+      }
+    },
+    {
+      "round": 4,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "sequential@xmpp": "rock",
+        "proactive@xmpp": "scissors"
+      },
+      "scores": {
+        "proactive@xmpp": 0,
+        "sequential@xmpp": 3,
+        "reactive@xmpp": 3
+      }
+    },
+    {
+      "round": 5,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "sequential@xmpp": "paper",
+        "proactive@xmpp": "paper"
+      },
+      "scores": {
+        "proactive@xmpp": 1,
+        "sequential@xmpp": 4,
+        "reactive@xmpp": 3
+      }
+    },
+    {
+      "round": 6,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "sequential@xmpp": "scissors",
+        "proactive@xmpp": "paper"
+      },
+      "scores": {
+        "proactive@xmpp": 2,
+        "sequential@xmpp": 5,
+        "reactive@xmpp": 4
+      }
+    },
+    {
+      "round": 7,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "sequential@xmpp": "rock",
+        "proactive@xmpp": "rock"
+      },
+      "scores": {
+        "proactive@xmpp": 2,
+        "sequential@xmpp": 5,
+        "reactive@xmpp": 4
+      }
+    },
+    {
+      "round": 8,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "sequential@xmpp": "paper",
+        "proactive@xmpp": "rock"
+      },
+      "scores": {
+        "proactive@xmpp": 2,
+        "sequential@xmpp": 7,
+        "reactive@xmpp": 4
+      }
+    },
+    {
+      "round": 9,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "proactive@xmpp": "rock",
+        "sequential@xmpp": "scissors"
+      },
+      "scores": {
+        "proactive@xmpp": 3,
+        "sequential@xmpp": 7,
+        "reactive@xmpp": 5
+      }
+    },
+    {
+      "round": 10,
+      "moves": {
+        "reactive@xmpp": "rock",
+        "sequential@xmpp": "rock",
+        "proactive@xmpp": "paper"
+      },
+      "scores": {
+        "proactive@xmpp": 5,
+        "sequential@xmpp": 7,
+        "reactive@xmpp": 5
+      }
+    }
+  ],
+  "finished": true
+}

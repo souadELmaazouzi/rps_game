@@ -1,0 +1,57 @@
+version: "3"
+
+services:
+  xmpp:
+    image: prosody/prosody:latest
+    container_name: xmpp
+    ports:
+      - "5222:5222"
+    volumes:
+      - ./prosody-config:/etc/prosody
+
+  referee:
+    build: .
+    container_name: referee
+    depends_on:
+      - xmpp
+    command: python referee.py
+    volumes:
+      - ./data:/app/data
+
+  proactive:
+    build: .
+    container_name: proactive
+    depends_on:
+      - xmpp
+    command: python player_proactive.py
+    volumes:
+      - ./data:/app/data
+
+  sequential:
+    build: .
+    container_name: sequential
+    depends_on:
+      - xmpp
+    command: python player_sequential.py
+    volumes:
+      - ./data:/app/data
+
+  reactive:
+    build: .
+    container_name: reactive
+    depends_on:
+      - xmpp
+    command: python player_reactive.py
+    volumes:
+      - ./data:/app/data
+
+  ui:
+    build: .
+    container_name: ui
+    depends_on:
+      - referee
+    command: streamlit run interface.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
